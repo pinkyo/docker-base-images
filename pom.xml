@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>jre-7</module>
         <module>jre-8</module>
     </modules>
 

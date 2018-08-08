@@ -57,6 +57,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <user>pinkyo</user>
                     <imageName>pinkyo/jre-8</imageName>
                     <dockerDirectory>target</dockerDirectory>
                     <imageTags>
