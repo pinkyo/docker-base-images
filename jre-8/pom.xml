@@ -27,6 +27,9 @@
 
                         <configuration>
                             <tasks>
+                                <get src="https://jre-1254036241.cos.ap-guangzhou.myqcloud.com/jre-8u172-linux-x64.tar.gz"
+                                     dest="${project.build.directory}/" />
+                                <untar compression="gzip" src="${project.build.directory}/jre-8u172-linux-x64.tar.gz" dest="jre-8u172" />
                                 <copy file="Dockerfile" todir="target/" />
                             </tasks>
                         </configuration>
