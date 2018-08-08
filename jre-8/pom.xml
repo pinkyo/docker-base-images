@@ -29,7 +29,8 @@
                             <tasks>
                                 <get src="https://jre-1254036241.cos.ap-guangzhou.myqcloud.com/jre-8u172-linux-x64.tar.gz"
                                      dest="${project.build.directory}/" />
-                                <untar compression="gzip" src="${project.build.directory}/jre-8u172-linux-x64.tar.gz" dest="jre-8u172" />
+                                <untar compression="gzip" src="${project.build.directory}/jre-8u172-linux-x64.tar.gz"
+                                       dest="${project.build.directory}/jre-8u172" />
                                 <copy file="Dockerfile" todir="target/" />
                             </tasks>
                         </configuration>
@@ -59,7 +60,7 @@
                 <configuration>
                     <user>pinkyo</user>
                     <imageName>pinkyo/jre-8</imageName>
-                    <dockerDirectory>target</dockerDirectory>
+                    <dockerDirectory>${project.build.directory}</dockerDirectory>
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
                         <imageTag>latest</imageTag>
