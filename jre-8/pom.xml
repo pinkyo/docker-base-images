@@ -30,7 +30,7 @@
                                 <get src="https://jre-1254036241.cos.ap-guangzhou.myqcloud.com/jre-8u172-linux-x64.tar.gz"
                                      dest="${project.build.directory}/" />
                                 <untar compression="gzip" src="${project.build.directory}/jre-8u172-linux-x64.tar.gz"
-                                       dest="${project.build.directory}/jre-8u172" />
+                                       dest="${project.build.directory}/" />
                                 <copy file="Dockerfile" todir="target/" />
                             </tasks>
                         </configuration>
