@@ -7,4 +7,5 @@ before_script:
 script:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 after_success:
+  - docker images
   - docker push registry.hub.docker.com/pinkyo/jre-8
