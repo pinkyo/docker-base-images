@@ -16,7 +16,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.8</version>
-
                 <executions>
                     <execution>
                         <id>ant</id>
@@ -58,8 +57,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <user>pinkyo</user>
-                    <imageName>pinkyo/jre-8</imageName>
+                    <imageName>registry.hub.docker.com/pinkyo/jre-8</imageName>
                     <dockerDirectory>${project.build.directory}</dockerDirectory>
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
